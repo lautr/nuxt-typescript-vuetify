@@ -1,4 +1,4 @@
-# Vuetify + Nuxt + Vuetify Starter
+# Nuxt + Typescript + Vuetify - Starter
 
 Mostly unopinionated starter for using nuxt with typescript & vuetify.
 
