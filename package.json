@@ -2,6 +2,14 @@
   "version": "1.0.0",
   "license": "mit",
   "private": false,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint": "tslint --project .",
+    "post-update": "yarn upgrade --latest"
+  },
   "dependencies": {
     "material-design-icons-iconfont": "4.0.4",
     "nuxt-ts": "2.4.2",
@@ -11,15 +19,10 @@
     "vuetify": "1.4.4",
     "vuex-module-decorators": "0.9.7"
   },
-  "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate",
-    "lint": "tslint --project .",
-    "post-update": "yarn upgrade --latest"
-  },
   "devDependencies": {
     "tslint-config-standard": "8.0.1"
+  },
+  "resolutions": {
+    "terser": "3.14.1"
   }
 }
