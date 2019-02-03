@@ -10,7 +10,6 @@ cache:
 install:
   - yarn install
   - yarn build
-  - yarn start
 
 script:
   - echo "Skipping tests"
