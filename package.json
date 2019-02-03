@@ -1,7 +1,6 @@
 {
   "version": "1.0.0",
   "license": "mit",
-  "private": false,
   "scripts": {
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
