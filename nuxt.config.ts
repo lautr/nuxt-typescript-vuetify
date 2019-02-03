@@ -1,3 +1,5 @@
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+
 export default {
   /*
   ** Global CSS
@@ -12,5 +14,18 @@ export default {
   plugins: [
     '~/plugins/hello',
     '~/plugins/vuetify'
-  ]
+  ],
+
+  /**
+   * Build configuration
+   */
+  build: {
+    transpile: ['vuetify/lib'],
+    plugins: [new VuetifyLoaderPlugin()],
+    loaders: {
+      stylus: {
+        import: ['~assets/style/variables.styl']
+      }
+    }
+  }
 }

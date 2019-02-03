@@ -1,5 +1,7 @@
 import Vue from 'vue'
-import Vuetify from 'vuetify'
+// @ts-ignore
+import Vuetify from 'vuetify/lib'
+// @ts-ignore
 import colors from 'vuetify/es5/util/colors'
 import 'material-design-icons-iconfont/dist/material-design-icons.css' // Ensure you are using css-loader
 

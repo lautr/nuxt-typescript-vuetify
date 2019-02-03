@@ -6802,6 +6802,13 @@ vue@^2.5.22:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.22.tgz#3bf88041af08b8539c37b268b70ca79245e9cc30"
   integrity sha512-pxY3ZHlXNJMFQbkjEgGVMaMMkSV1ONpz+4qB55kZuJzyJOhn6MSy/YZdzhdnumegNzVTL/Dn3Pp4UrVBYt1j/g==
 
+vuetify-loader@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/vuetify-loader/-/vuetify-loader-1.2.0.tgz#2db23b368516d23a39dddec71ecb43452447edc2"
+  integrity sha512-hxdUnfDty5nHFT1G3AbqWU1PD3P5DA6Bq6ZMzw65gwfvShYyoF/l/zMnsFoHKXeU8fFFGnnNhAFtYDQ/U+2e0w==
+  dependencies:
+    loader-utils "^1.1.0"
+
 vuetify@1.4.4:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.4.4.tgz#0a08d98e685a875e3d7fd035235932d9abf3fd5b"
