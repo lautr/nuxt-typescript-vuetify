@@ -6814,6 +6814,11 @@ vuetify@1.5.0:
   resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.5.0.tgz#b7334f525b5dd416b01d5e9ddbadad22beeb9d7f"
   integrity sha512-I2bITwvtkfbUf2hfrKo3Uta4egpv5KzEcKR1czgdyjZdA1nlo96XV2EDu0XetLl6p+AjhOqwlZWbLSezy9ZZmQ==
 
+vuex-class@0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/vuex-class/-/vuex-class-0.3.1.tgz#3c0b946bcff4cf2be1904de5b0cab1a3dd5c41d5"
+  integrity sha512-d7Hc+ItQx6p9E/2mEWiyrvyEuo7Uj0mq4VNImd7dmxTelnkhOavKPMEG1Xdypug2RlPEYv0920IOa3hdVZ+4AA==
+
 vuex-module-decorators@0.9.7:
   version "0.9.7"
   resolved "https://registry.yarnpkg.com/vuex-module-decorators/-/vuex-module-decorators-0.9.7.tgz#044350b183aec064c5c60626b0ab030d8ea68812"

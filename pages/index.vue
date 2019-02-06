@@ -1,21 +1,48 @@
 <template>
-  <div>
-    <h1>hello</h1>
-    <HelloWorld />
-  </div>
+  <v-layout
+    wrap
+    row
+  >
+    <v-flex xs12>
+      <Counter />
+    </v-flex>
+    <v-flex xs12>
+      <v-form>
+        <v-text-field
+          v-model="counter"
+          label="add to counter"
+          required
+        />
+      </v-form>
+      <v-btn
+        block
+        color="primary"
+        @click='submit'
+      >
+        add to counter
+      </v-btn>
+    </v-flex>
+  </v-layout>
 </template>
-
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import HelloWorld from '~/components/HelloWorld.vue'
+import Counter from '~/components/Counter.vue'
+import { Action } from 'vuex-class'
 
 @Component({
   mounted () {
     console.log(this.$store)
   },
   components: {
-    HelloWorld
+    Counter
   }
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  @Action('counter/add') addToCounter: any
+  counter = 0
+  submit () {
+    this.addToCounter(Number(this.counter))
+    this.counter = 0
+  }
+}
 </script>

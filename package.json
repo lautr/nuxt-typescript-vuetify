@@ -17,6 +17,7 @@
     "vue-property-decorator": "7.3.0",
     "vuetify": "1.5.0",
     "vuetify-loader": "1.2.0",
+    "vuex-class": "0.3.1",
     "vuex-module-decorators": "0.9.7"
   },
   "devDependencies": {
