@@ -22,8 +22,5 @@
   },
   "devDependencies": {
     "tslint-config-standard": "8.0.1"
-  },
-  "resolutions": {
-    "terser": "3.14.1"
   }
 }
