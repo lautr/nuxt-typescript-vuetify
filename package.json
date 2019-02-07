@@ -1,5 +1,7 @@
 {
+  "name": "nuxt-typescript-vuetify-starter",
   "version": "1.0.0",
+  "author": "Johannes Lauter",
   "license": "mit",
   "scripts": {
     "dev": "nuxt-ts",

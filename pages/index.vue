@@ -30,9 +30,6 @@ import Counter from '~/components/Counter.vue'
 import { Action } from 'vuex-class'
 
 @Component({
-  mounted () {
-    console.log(this.$store)
-  },
   components: {
     Counter
   }
