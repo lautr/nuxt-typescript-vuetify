@@ -81,10 +81,19 @@
           </v-layout>
         </v-container>
       </v-content>
+      <v-snackbar
+        v-model="countHasBeenUpdated"
+        :timeout="3000"
+        bottom
+        right
+      >
+        count has been changed
+      </v-snackbar>
     </v-app>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue, Watch } from 'vue-property-decorator'
+import { Getter } from 'vuex-class'
 
 @Component({
   data () {
@@ -102,7 +111,14 @@ import { Component, Vue } from 'vue-property-decorator'
     }
   }
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  @Getter('counter/getCount') getCount: any
+  @Watch('getCount') onCountChange (val: Number, oldVal: Number) {
+    this.countHasBeenUpdated = (val !== oldVal)
+  }
+
+  countHasBeenUpdated = false
+}
 </script>
 <style lang="stylus">
 #content
@@ -110,6 +126,5 @@ export default class Home extends Vue {}
 
 #content-window
   height 100%
-
 </style>
 

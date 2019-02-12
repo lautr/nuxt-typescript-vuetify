@@ -4,6 +4,11 @@
     row
   >
     <v-flex xs12>
+      <h1 class="display-3">
+        NUXT + TypeScript + Vuetify
+      </h1>
+    </v-flex>
+    <v-flex xs12>
       <Counter />
     </v-flex>
     <v-flex xs12>
