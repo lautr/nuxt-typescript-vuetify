@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "material-design-icons-iconfont": "4.0.5",
-    "nuxt-ts": "2.4.3",
+    "nuxt-ts": "2.4.5",
     "stylus": "0.54.5",
     "stylus-loader": "3.0.2",
     "vue-property-decorator": "7.3.0",
