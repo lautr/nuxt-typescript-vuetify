@@ -21,6 +21,9 @@ export default {
    */
   build: {
     transpile: ['vuetify/lib'],
+    typescript : {
+      typeCheck: false // or ForkTsChecker options
+    },
     plugins: [new VuetifyLoaderPlugin()],
     loaders: {
       stylus: {
