@@ -4,17 +4,17 @@
   "author": "Johannes Lauter",
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
     "lint": "tslint --project .",
     "post-update": "yarn upgrade --latest"
   },
   "dependencies": {
-    "@nuxt/typescript": "2.5.0",
+    "@nuxt/typescript": "2.5.1",
     "material-design-icons-iconfont": "4.0.5",
-    "nuxt": "2.5.0",
+    "nuxt": "2.5.1",
     "stylus": "0.54.5",
     "stylus-loader": "3.0.2",
     "vue-property-decorator": "8.1.0",
