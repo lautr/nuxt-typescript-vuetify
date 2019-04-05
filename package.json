@@ -9,7 +9,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "tslint --project .",
-    "post-update": "yarn upgrade --latest"
+    "post-update": "yarn upgrade --latest",
+    "now-build": "nuxt build --spa"
   },
   "dependencies": {
     "material-design-icons-iconfont": "4.0.5",
