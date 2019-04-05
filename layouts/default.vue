@@ -123,8 +123,6 @@ export default class Home extends Vue {
 <style lang="stylus">
 #content
   margin-left 300px
-
 #content-window
   height 100%
 </style>
-
