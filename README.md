@@ -2,6 +2,7 @@
 
 Mostly unopinionated starter for using nuxt with typescript & vuetify.
 
+[![now.sh Build](https://badgen.net/badge/now.sh/master/black)](https://nuxt-typescript-vuetify-git-master.justhannes.now.sh/)
 [![Build Status](https://travis-ci.org/lautr/nuxt-typescript-vuetify.svg?branch=master)](https://travis-ci.org/lautr/nuxt-typescript-vuetify)
 [![MIT](https://img.shields.io/github/license/lautr/nuxt-typescript-vuetify.svg?style=flat)](https://github.com/lautr/nuxt-typescript-vuetify)
 [![Dependencies](https://david-dm.org/lautr/nuxt-typescript-vuetify.svg)](https://david-dm.org/lautr/nuxt-typescript-vuetify)
