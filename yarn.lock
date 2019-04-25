@@ -900,10 +900,10 @@
     server-destroy "^1.0.1"
     ua-parser-js "^0.7.19"
 
-"@nuxt/typescript@2.6.2":
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/typescript/-/typescript-2.6.2.tgz#7cda802fdb0f16cc2b233d00e05ff6254d567202"
-  integrity sha512-AKJJ8OdPrYN+eeCs5Sf4AvdhMB8E/7OsoYCTo0x5CFvuwPkRhm+AMiy5XW1okzcpNe9qT+eWtIvbw8oEekvYRA==
+"@nuxt/typescript@2.6.3":
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/@nuxt/typescript/-/typescript-2.6.3.tgz#3723259dcc7c776c8158fbcf683337a96c11f23b"
+  integrity sha512-Wg1fUUJ+Qas0iRAb/n4FgGVxL0ixGfPSH1bNsV/kJWGceBhAnRmt+Q9JO/IVdely2yq4Mw6HWvq+rPNyGGkGNg==
   dependencies:
     "@types/chokidar" "^2.1.3"
     "@types/compression" "^0.0.36"
