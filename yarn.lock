@@ -7765,10 +7765,10 @@ vuetify-loader@1.2.2:
   dependencies:
     loader-utils "^1.1.0"
 
-vuetify@1.5.13:
-  version "1.5.13"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.5.13.tgz#b2e406ebdc59723c5ecbd2d0595d3d2ae0cac812"
-  integrity sha512-mUOs9znDmMO/A2I117B/ZHyFlwSqkKplhSL8G2EnS+m0rvZv2Uqjo9idOBbdhaJ3A9sJWT6wDUFywEYuuIcu+g==
+vuetify@1.5.14:
+  version "1.5.14"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.5.14.tgz#ff67d0b8a398be5297da159b6cd1b31f4d2898b8"
+  integrity sha512-7iM+TfghR/wu/Gl+k37lKr0N8Ddr6SxzqHtoK1dIyHgCH6SJRkpaXPw2MC5/FsAg9aUDJbYNWrzSeu5eHw+Q/w==
 
 vuex-class@0.3.2:
   version "0.3.2"
