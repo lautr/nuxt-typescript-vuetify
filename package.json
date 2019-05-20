@@ -22,7 +22,7 @@
     "vuetify": "1.5.14",
     "vuetify-loader": "1.2.2",
     "vuex-class": "0.3.2",
-    "vuex-module-decorators": "0.9.8"
+    "vuex-module-decorators": "0.9.9"
   },
   "devDependencies": {
     "@nuxt/typescript": "2.6.3",
