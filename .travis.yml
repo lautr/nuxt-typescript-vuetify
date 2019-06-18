@@ -20,3 +20,8 @@ script:
 
 after_success:
   - codecov
+
+addons:
+  apt:
+    packages:
+    - libgconf-2-4
