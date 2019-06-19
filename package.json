@@ -17,7 +17,7 @@
     "nuxt": "2.8.1",
     "stylus": "0.54.5",
     "stylus-loader": "3.0.2",
-    "ts-node": "8.2.0",
+    "ts-node": "8.3.0",
     "vue-property-decorator": "8.2.1",
     "vuetify": "1.5.14",
     "vuetify-loader": "1.2.2",
