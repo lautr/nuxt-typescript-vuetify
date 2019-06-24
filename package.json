@@ -19,7 +19,7 @@
     "stylus-loader": "3.0.2",
     "ts-node": "8.3.0",
     "vue-property-decorator": "8.2.1",
-    "vuetify": "1.5.14",
+    "vuetify": "1.5.16",
     "vuetify-loader": "1.2.2",
     "vuex-class": "0.3.2",
     "vuex-module-decorators": "0.9.9"
