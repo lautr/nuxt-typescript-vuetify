@@ -13,10 +13,12 @@
     "now-build": "nuxt build --spa"
   },
   "dependencies": {
+    "deepmerge": "4.0.0",
+    "fibers": "4.0.1",
     "material-design-icons-iconfont": "5.0.1",
     "nuxt": "2.8.1",
-    "stylus": "0.54.5",
-    "stylus-loader": "3.0.2",
+    "sass": "1.22.7",
+    "sass-loader": "7.1.0",
     "ts-node": "8.3.0",
     "vue-property-decorator": "8.2.1",
     "vuetify": "2.0.2",
@@ -28,5 +30,8 @@
     "@nuxt/typescript": "2.8.1",
     "cypress": "3.4.0",
     "tslint-config-standard": "8.0.1"
+  },
+  "resolutions": {
+    "node-fetch": "2.6.0"
   }
 }
