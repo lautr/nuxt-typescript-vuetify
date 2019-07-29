@@ -22,6 +22,7 @@ export default {
    */
   build: {
     extend (config, { isDev, isClient }) {
+      // we want to use sass instead of node-sass
       remove(config.module.rules, rule => {
         return rule.test.source.includes('sass') || rule.test.source.includes('scss')
       })
@@ -42,8 +43,6 @@ export default {
           ]
         }
       )
-
-      // return config
     },
     loaders: {
       sass: {
