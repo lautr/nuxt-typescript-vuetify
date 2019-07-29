@@ -1,4 +1,9 @@
 {
+  "baseBranches": [
+    "master",
+    "next",
+    "vuetify-1.x"
+  ],
   "extends": [
     "config:base"
   ]
