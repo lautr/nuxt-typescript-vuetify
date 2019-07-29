@@ -1,95 +1,87 @@
 <template>
-    <v-app>
-      <v-navigation-drawer
-        stateless
-        absolute
-        value="true"
+<v-app>
+  <v-navigation-drawer
+    app
+    color="primary"
+    left
+    absolute
+    dark
+    v-model="sideNavigationActive"
+  >
+    <v-list
+      dense
+      nav
+      class="py-0"
+    >
+      <v-list-item two-line>
+        <v-list-item-avatar>
+          <img src="https://randomuser.me/api/portraits/men/81.jpg">
+        </v-list-item-avatar>
+
+        <v-list-item-content>
+          <v-list-item-title>Application</v-list-item-title>
+          <v-list-item-subtitle>Subtext</v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list-item
+        v-for="item in items"
+        :key="item.title"
+        link
       >
-        <v-list>
-          <v-list-tile>
-            <v-list-tile-action>
-              <v-icon>home</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-title>Home</v-list-tile-title>
-          </v-list-tile>
+        <v-list-item-icon>
+          <v-icon>{{ item.icon }}</v-icon>
+        </v-list-item-icon>
 
-          <v-list-group
-            prepend-icon="account_circle"
-            value="true"
-          >
-            <v-list-tile slot="activator">
-              <v-list-tile-title>Users</v-list-tile-title>
-            </v-list-tile>
+        <v-list-item-content>
+          <v-list-item-title>{{ item.title }}</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
+  </v-navigation-drawer>
 
-            <v-list-group
-              no-action
-              sub-group
-              value="true"
-            >
-              <v-list-tile slot="activator">
-                <v-list-tile-title>Admin</v-list-tile-title>
-              </v-list-tile>
+  <v-app-bar
+    app
+  >
+    <v-app-bar-nav-icon
+      @click="sideNavigationActive = !sideNavigationActive"
+    />
+    <v-toolbar-title>Page title</v-toolbar-title>
+    <!-- -->
+  </v-app-bar>
 
-              <v-list-tile
-                v-for="(admin, i) in admins"
-                :key="i"
-              >
-                <v-list-tile-title v-text="admin[0]"></v-list-tile-title>
-                <v-list-tile-action>
-                  <v-icon v-text="admin[1]"></v-icon>
-                </v-list-tile-action>
-              </v-list-tile>
-            </v-list-group>
+  <!-- Sizes your content based upon application components -->
+  <v-content>
 
-            <v-list-group
-              sub-group
-              no-action
-            >
-              <v-list-tile slot="activator">
-                <v-list-tile-title>Actions</v-list-tile-title>
-              </v-list-tile>
-
-              <v-list-tile
-                v-for="(crud, i) in cruds"
-                :key="i"
-              >
-                <v-list-tile-title v-text="crud[0]"></v-list-tile-title>
-                <v-list-tile-action>
-                  <v-icon v-text="crud[1]"></v-icon>
-                </v-list-tile-action>
-              </v-list-tile>
-            </v-list-group>
-          </v-list-group>
-        </v-list>
-      </v-navigation-drawer>
-      <v-content id="content">
-        <v-container
-          grid-list-xl
-          fill-height
-        >
-          <v-layout
-            row
-            fill-height
-          >
-            <v-flex>
-              <v-card id="content-window">
-                <v-card-title>
-                  <nuxt />
-                </v-card-title>
-              </v-card>
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </v-content>
-      <v-snackbar
-        v-model="countHasBeenUpdated"
-        :timeout="3000"
-        bottom
-        right
+    <!-- Provides the application the proper gutter -->
+    <v-container
+      fluid
+    >
+      <v-card
+        class="mx-auto"
       >
-        count has been changed
-      </v-snackbar>
-    </v-app>
+        <v-card-title>
+          <nuxt />
+        </v-card-title>
+      </v-card>
+      <!-- If using vue-router -->
+    </v-container>
+  </v-content>
+
+  <v-footer app>
+    <!-- -->
+  </v-footer>
+  <v-snackbar
+    v-model="countHasBeenUpdated"
+    :timeout="3000"
+    bottom
+    right
+  >
+    count has been changed
+  </v-snackbar>
+</v-app>
 </template>
 <script lang="ts">
 import { Component, Vue, Watch } from 'vue-property-decorator'
@@ -98,16 +90,12 @@ import { Getter } from 'vuex-class'
 @Component({
   data () {
     return {
-      admins: [
-        ['Management', 'people_outline'],
-        ['Settings', 'settings']
+      sideNavigationActive: true,
+      items: [
+        { title: 'Dashboard', icon: 'dashboard' },
+        { title: 'Photos', icon: 'photo' },
+        { title: 'About', icon: 'check_circle' },
       ],
-      cruds: [
-        ['Create', 'add'],
-        ['Read', 'insert_drive_file'],
-        ['Update', 'update'],
-        ['Delete', 'delete']
-      ]
     }
   }
 })
@@ -120,9 +108,3 @@ export default class Home extends Vue {
   countHasBeenUpdated = false
 }
 </script>
-<style lang="stylus">
-#content
-  margin-left 300px
-#content-window
-  height 100%
-</style>

@@ -1,11 +1,12 @@
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+const remove = require('lodash/remove')
 
 export default {
   /*
   ** Global CSS
   */
   css: [
-    '~/assets/style/app.styl'
+    '~/assets/style/app.sass'
   ],
 
   /*
@@ -17,18 +18,42 @@ export default {
   ],
 
   /**
-   * Build configuration
+   * Build configurationö
    */
   build: {
+    extend (config, { isDev, isClient }) {
+      remove(config.module.rules, rule => {
+        return rule.test.source.includes('sass') || rule.test.source.includes('scss')
+      })
+      config.module.rules.push(
+        {
+          test: /\.s(c|a)ss$/,
+          use: [
+            'vue-style-loader',
+            'css-loader',
+            {
+              loader: 'sass-loader',
+              options: {
+                implementation: require('sass'),
+                fiber: require('fibers'),
+                indentedSyntax: true // optional
+              }
+            }
+          ]
+        }
+      )
+
+      // return config
+    },
+    loaders: {
+      sass: {
+        import: ['~assets/style/variables.sass']
+      }
+    },
+    plugins: [new VuetifyLoaderPlugin()],
     transpile: ['vuetify/lib'],
     typescript: {
       typeCheck: false
-    },
-    plugins: [new VuetifyLoaderPlugin()],
-    loaders: {
-      stylus: {
-        import: ['~assets/style/variables.styl']
-      }
     }
   }
 }
