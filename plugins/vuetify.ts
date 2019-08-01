@@ -14,7 +14,7 @@ export default (ctx) => {
       options: {
         minifyTheme: css => {
           return process.env.NODE_ENV === 'production'
-            ? css.replace(/[\s|\r\n|\r|\n]/g, '')
+            ? css.replace(/[\r\n|\r|\n]/g, '')
             : css
         },
       },
