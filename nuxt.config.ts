@@ -21,32 +21,13 @@ export default {
    * Build configurationö
    */
   build: {
-    extend (config, { isDev, isClient }) {
-      // we want to use sass instead of node-sass
-      remove(config.module.rules, rule => {
-        return rule.test.source.includes('sass') || rule.test.source.includes('scss')
-      })
-      config.module.rules.push(
-        {
-          test: /\.s(c|a)ss$/,
-          use: [
-            'vue-style-loader',
-            'css-loader',
-            {
-              loader: 'sass-loader',
-              options: {
-                implementation: require('sass'),
-                fiber: require('fibers'),
-                indentedSyntax: true // optional
-              }
-            }
-          ]
-        }
-      )
-    },
     loaders: {
+      // we want to use sass instead of node-sass
       sass: {
-        import: ['~assets/style/variables.sass']
+        import: ['~assets/style/variables.sass'],
+        implementation: require('sass'),
+        fiber: require('fibers'),
+        indentedSyntax: true // optional
       }
     },
     plugins: [new VuetifyLoaderPlugin()],
