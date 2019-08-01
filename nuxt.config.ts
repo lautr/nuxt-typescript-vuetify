@@ -18,7 +18,7 @@ export default {
   ],
 
   /**
-   * Build configurationö
+   * Build configuration
    */
   build: {
     loaders: {
