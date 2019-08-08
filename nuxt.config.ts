@@ -3,13 +3,6 @@ const remove = require('lodash/remove')
 
 export default {
   /*
-  ** Global CSS
-  */
-  css: [
-    '~/assets/style/app.sass'
-  ],
-
-  /*
   ** Plugins to load before mounting the App
   */
   plugins: [
@@ -24,7 +17,7 @@ export default {
     loaders: {
       // we want to use sass instead of node-sass
       sass: {
-        import: ['~assets/style/variables.sass'],
+        import: ['~assets/style/app.sass'],
         implementation: require('sass'),
         fiber: require('fibers'),
         indentedSyntax: true // optional

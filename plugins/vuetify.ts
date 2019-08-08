@@ -8,7 +8,7 @@ Vue.use(Vuetify)
 export default (ctx) => {
   const vuetify = new Vuetify({
     icons: {
-      iconfont: 'md', // default - only for display purposes
+      iconfont: 'mdi', // default - only for display purposes
     },
     theme: {
       options: {
