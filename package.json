@@ -18,7 +18,7 @@
     "material-design-icons-iconfont": "5.0.1",
     "nuxt": "2.8.1",
     "sass": "1.22.9",
-    "sass-loader": "7.1.0",
+    "sass-loader": "7.2.0",
     "ts-node": "8.3.0",
     "vue-property-decorator": "8.2.1",
     "vuetify": "2.0.5",
