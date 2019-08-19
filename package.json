@@ -17,7 +17,7 @@
     "fibers": "4.0.1",
     "material-design-icons-iconfont": "5.0.1",
     "nuxt": "2.8.1",
-    "sass": "1.22.9",
+    "sass": "1.22.10",
     "sass-loader": "7.2.0",
     "ts-node": "8.3.0",
     "vue-property-decorator": "8.2.1",
