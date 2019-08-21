@@ -15,7 +15,7 @@
   "dependencies": {
     "material-design-icons-iconfont": "5.0.1",
     "nuxt": "2.8.1",
-    "stylus": "0.54.6",
+    "stylus": "0.54.7",
     "stylus-loader": "3.0.2",
     "ts-node": "8.3.0",
     "vue-property-decorator": "8.2.1",
