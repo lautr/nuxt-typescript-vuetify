@@ -1,18 +1,7 @@
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
-const remove = require('lodash/remove')
 
 export default {
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-    '~/plugins/hello',
-    '~/plugins/vuetify'
-  ],
-
-  /**
-   * Build configuration
-   */
+  /** Build configuration */
   build: {
     loaders: {
       // we want to use sass instead of node-sass
@@ -28,5 +17,17 @@ export default {
     typescript: {
       typeCheck: false
     }
+  },
+  /** @see https://typescript.nuxtjs.org/migration.html */
+  buildModules: ['@nuxt/typescript-build'],
+  /** Plugins to load before mounting the App **/
+  plugins: [
+    '~/plugins/hello',
+    '~/plugins/vuetify'
+  ],
+  /** typescript config for nuxt */
+  typescript: {
+    typeCheck: true,
+    ignoreNotFoundWarnings: true
   }
 }
