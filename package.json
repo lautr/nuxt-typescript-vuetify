@@ -10,7 +10,7 @@
     "start": "nuxt-ts start",
     "lint": "eslint --ext .ts,.js,.vue .",
     "post-update": "yarn upgrade --latest",
-    "now-build": "nuxt build --spa"
+    "now-build": "nuxt-ts build --spa"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "0.1.2",
