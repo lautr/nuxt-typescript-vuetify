@@ -15,7 +15,8 @@ export default {
     plugins: [new VuetifyLoaderPlugin()],
     transpile: ['vuetify/lib'],
     typescript: {
-      typeCheck: true
+      // this is required - if set to true the HMR in dev will time out
+      typeCheck: false
     }
   },
   /** @see https://typescript.nuxtjs.org/migration.html */
