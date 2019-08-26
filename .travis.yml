@@ -15,6 +15,7 @@ install:
   - yarn build --modern=client
 
 script:
+  - yarn lint
   - yarn start -- --silent &
   - yarn cypress run
 
