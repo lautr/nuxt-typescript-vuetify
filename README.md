@@ -18,16 +18,29 @@
 yarn install
 ```
 
-## Usage
+## Usage for development
 
 ```sh
-yarn nuxt dev
+yarn dev
+```
+
+## Usage for produciton
+
+```sh
+yarn build
+yarn start
 ```
 
 ## Run tests
 
 ```sh
 yarn cypress run
+```
+
+## Run lint
+
+```sh
+yarn lint
 ```
 
 ## Author
