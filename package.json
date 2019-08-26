@@ -35,6 +35,9 @@
     "eslint-loader": "3.0.0",
     "tslint-config-standard": "8.0.1"
   },
+  "engines": {
+    "node": ">=10 <13.0.0"
+  },
   "resolutions": {
     "lodash": "4.17.15",
     "node-fetch": "2.6.0"
