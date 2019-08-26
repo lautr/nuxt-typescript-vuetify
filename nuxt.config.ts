@@ -1,8 +1,20 @@
+import { Context } from 'vm'
+
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
 export default {
   /** Build configuration */
   build: {
+    extend (config: any, context: Context) {
+      if (context.isDev && !process.client) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(ts|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
+    },
     loaders: {
       // we want to use sass instead of node-sass
       sass: {
@@ -28,7 +40,7 @@ export default {
   ],
   /** typescript config for nuxt */
   typescript: {
-    typeCheck: true,
+    typeCheck: false,
     ignoreNotFoundWarnings: true
   }
 }

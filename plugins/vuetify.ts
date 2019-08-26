@@ -9,25 +9,25 @@ Vue.use(Vuetify)
 export default (ctx: Context) => {
   const vuetify = new Vuetify({
     icons: {
-      iconfont: 'mdi', // default - only for display purposes
+      iconfont: 'mdi' // default - only for display purposes
     },
     theme: {
       options: {
-        minifyTheme: css => {
+        minifyTheme: (css) => {
           return process.env.NODE_ENV === 'production'
             ? css.replace(/[\r\n|\r|\n]/g, '')
             : css
-        },
+        }
       },
       themes: {
         light: {
           secondary: colors.grey.darken1,
           accent: colors.shades.black,
-          error: colors.red.accent3,
+          error: colors.red.accent3
         },
         dark: {
-          primary: colors.blue.lighten3,
-        },
+          primary: colors.blue.lighten3
+        }
       }
     }
   })

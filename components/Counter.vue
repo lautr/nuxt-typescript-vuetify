@@ -3,7 +3,7 @@
     :value="true"
     type="success"
   >
-    Counter is at {{ getCount }}
+    Counter is at {{ getCount }}!
   </v-alert>
 </template>
 

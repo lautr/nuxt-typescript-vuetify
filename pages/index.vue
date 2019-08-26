@@ -22,7 +22,7 @@
       <v-btn
         block
         color="primary"
-        @click='submit'
+        @click="submit"
       >
         add to counter
       </v-btn>
@@ -30,9 +30,9 @@
   </v-layout>
 </template>
 <script lang="ts">
+import { Action } from 'vuex-class'
 import { Component, Vue } from 'vue-property-decorator'
 import Counter from '~/components/Counter.vue'
-import { Action } from 'vuex-class'
 
 @Component({
   components: {

@@ -8,7 +8,7 @@
     "build": "nuxt-ts build",
     "generate": "nuxt-ts generate",
     "start": "nuxt-ts start",
-    "lint": "tslint --project .",
+    "lint": "eslint --ext .ts,.js,.vue .",
     "post-update": "yarn upgrade --latest",
     "now-build": "nuxt build --spa"
   },
@@ -29,7 +29,10 @@
   },
   "devDependencies": {
     "@nuxt/typescript-build": "0.1.10",
+    "@nuxtjs/eslint-config-typescript": "0.1.2",
     "cypress": "3.4.1",
+    "eslint": "6.2.2",
+    "eslint-loader": "3.0.0",
     "tslint-config-standard": "8.0.1"
   },
   "resolutions": {
