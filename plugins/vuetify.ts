@@ -2,10 +2,11 @@ import Vue from 'vue'
 import Vuetify from 'vuetify/lib'
 import colors from 'vuetify/lib/util/colors'
 import 'material-design-icons-iconfont/dist/material-design-icons.css' // Ensure you are using css-loader
+import { Context } from '@nuxt/types'
 
 Vue.use(Vuetify)
 
-export default (ctx) => {
+export default (ctx: Context) => {
   const vuetify = new Vuetify({
     icons: {
       iconfont: 'mdi', // default - only for display purposes
@@ -32,5 +33,6 @@ export default (ctx) => {
   })
 
   ctx.app.vuetify = vuetify
+  // @ts-ignore
   ctx.$vuetify = vuetify.framework
 }

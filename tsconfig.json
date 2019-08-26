@@ -1,21 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "types": [
-      "@types/node",
-      "@nuxt/types",
-      "@nuxt/vue-app",
-      "vuetify"
-    ],
-    "paths": {
-      "~/*": [
-        "./*"
-      ],
-      "@/*": [
-        "./*"
-      ]
-    },
-    "experimentalDecorators": true,
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
@@ -25,10 +9,27 @@
       "dom"
     ],
     "esModuleInterop": true,
+    "experimentalDecorators": true,
     "allowJs": true,
     "sourceMap": true,
     "strict": true,
-    "noImplicitAny": false,
-    "noEmit": true
-  }
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
+    "types": [
+      "@types/node",
+      "@nuxt/types",
+      "vuetify"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }

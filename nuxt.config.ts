@@ -15,7 +15,7 @@ export default {
     plugins: [new VuetifyLoaderPlugin()],
     transpile: ['vuetify/lib'],
     typescript: {
-      typeCheck: false
+      typeCheck: true
     }
   },
   /** @see https://typescript.nuxtjs.org/migration.html */
