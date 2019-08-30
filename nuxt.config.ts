@@ -20,8 +20,7 @@ export default {
       sass: {
         import: ['~assets/style/app.sass'],
         implementation: require('sass'),
-        fiber: require('fibers'),
-        indentedSyntax: true // optional
+        fiber: require('fibers')
       }
     },
     plugins: [new VuetifyLoaderPlugin()],
