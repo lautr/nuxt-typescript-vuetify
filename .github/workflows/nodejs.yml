@@ -19,10 +19,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
       run: |
-        npm install
-        npm build
-        npm lint
-        npm start -- --silent &
-        npm cypress run
+        yarn install
+        yarn build
+        yarn lint
+        yarn start -- --silent &
+        yarn cypress run
       env:
         CI: true
