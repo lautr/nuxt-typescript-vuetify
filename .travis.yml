@@ -11,16 +11,12 @@ cache:
 
 install:
   - yarn install
-  - yarn global add codecov
   - yarn build --modern=client
 
 script:
   - yarn lint
   - yarn start -- --silent &
   - yarn cypress run
-
-after_success:
-  - codecov
 
 addons:
   apt:
