@@ -31,7 +31,7 @@
     "@nuxt/typescript-build": "0.2.0",
     "@nuxtjs/eslint-config-typescript": "0.1.2",
     "cypress": "3.4.1",
-    "eslint": "6.2.2",
+    "eslint": "6.3.0",
     "eslint-loader": "3.0.0",
     "tslint-config-standard": "8.0.1"
   },
