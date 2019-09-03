@@ -2,6 +2,11 @@
 
 > Mostly unopinionated starter for using nuxt with typescript & vuetify.
 
+The purpose of this repository is to provide an up-to-date starting point for People that want to work with Nuxt & Vuetify using TypeScript,
+while keeping control over as much of the integration & configuration as possibile.
+
+If you are looking to setup vuetify & nuxt fast and get started coding the [vuetify-module](https://github.com/nuxt-community/vuetify-module) might be a better fit for you.
+
 [![now.sh Build](https://badgen.net/badge/now.sh/master/black)](https://nuxt-typescript-vuetify-git-master.justhannes.now.sh/)
 [![Build Status](https://travis-ci.org/lautr/nuxt-typescript-vuetify.svg?branch=master)](https://travis-ci.org/lautr/nuxt-typescript-vuetify)
 [![MIT](https://img.shields.io/github/license/lautr/nuxt-typescript-vuetify.svg?style=flat)](https://github.com/lautr/nuxt-typescript-vuetify)

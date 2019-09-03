@@ -12,7 +12,7 @@ import { Component, Vue } from 'vue-property-decorator'
 import { Getter } from 'vuex-class'
 
 @Component
-export default class HelloWorld extends Vue {
+export default class Counter extends Vue {
   @Getter('counter/getCount') getCount: any
 }
 </script>
