@@ -1,9 +1,14 @@
 {
+  "automerge": true,
   "baseBranches": [
     "master",
     "vuetify-1.x"
   ],
+  "commitMessagePrefix": "⬆️",
   "extends": [
     "config:base"
-  ]
+  ],
+  "major": {
+    "automerge": false
+  }
 }
