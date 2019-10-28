@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "0.2.2",
-    "deepmerge": "4.2.1",
+    "deepmerge": "4.2.2",
     "fibers": "4.0.2",
     "material-design-icons-iconfont": "5.0.1",
     "nuxt": "2.10.2",
