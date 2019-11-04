@@ -33,7 +33,7 @@
     "cypress": "3.6.0",
     "eslint": "6.6.0",
     "eslint-loader": "3.0.2",
-    "tslint-config-standard": "8.0.1"
+    "tslint-config-standard": "9.0.0"
   },
   "engines": {
     "node": ">=10 <13.0.0"
