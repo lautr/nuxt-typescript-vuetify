@@ -8128,10 +8128,10 @@ vuetify-loader@1.3.0:
   dependencies:
     loader-utils "^1.2.0"
 
-vuetify@1.5.19:
-  version "1.5.19"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.5.19.tgz#9b7487ec8f1ca4fa8539bdab57b4ddf8fcb86d6e"
-  integrity sha512-GbLWPtiYUaYhnP68GteqT79FxIrAKRF3ZPvvm4a1jEZ5FJDmLlM8eJLB37ppsUys/U/z88g3AtdVvc++gHKzCQ==
+vuetify@1.5.20:
+  version "1.5.20"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.5.20.tgz#0bf44778a4ad4b52d4bd2097a53d65043c4ae1b3"
+  integrity sha512-tky4uV8vNfQ+3bVo4oI5cVVxa8uGbToFXbbAUoxw7/ckWv16ef+NGYa5quDGAqqshS/D3qdAn/+yy4C/rTbR+Q==
 
 vuex-class@0.3.2:
   version "0.3.2"
