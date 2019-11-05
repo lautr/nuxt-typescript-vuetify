@@ -27,6 +27,6 @@
   "devDependencies": {
     "@nuxt/typescript": "2.8.1",
     "cypress": "3.6.0",
-    "tslint-config-standard": "8.0.1"
+    "tslint-config-standard": "9.0.0"
   }
 }
