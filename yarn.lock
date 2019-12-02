@@ -1080,10 +1080,10 @@
     "@types/webpack-dev-middleware" "^2.0.3"
     "@types/webpack-hot-middleware" "^2.16.5"
 
-"@nuxt/types@0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/types/-/types-0.5.2.tgz#fbb6538076562d8642b170e8fc64e43f7d902556"
-  integrity sha512-m6OInwMhiNIgjffEm4RQinUvCBibHLrY/gvJn7sZzDvbhJhm8iFjip6EvswE1ZBNPyhQpEa9FbmMlHtNlTlo+w==
+"@nuxt/types@0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@nuxt/types/-/types-0.5.3.tgz#448910f162e14779dc070fd5fde39cfc1454e2f1"
+  integrity sha512-1jYD4ylM/D9tuMk+iHWPT0IGoPTINmbzWR6eN+UIlUDnu6M/mNF9gZljykfg3DnXSX1A4n/5VaixkXp3O2hXSw==
   dependencies:
     "@types/autoprefixer" "^9.6.1"
     "@types/babel__core" "^7.1.3"
@@ -1105,12 +1105,12 @@
     "@types/webpack-dev-middleware" "^2.0.3"
     "@types/webpack-hot-middleware" "^2.16.5"
 
-"@nuxt/typescript-build@0.3.9":
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/@nuxt/typescript-build/-/typescript-build-0.3.9.tgz#6e5078b61af2cdaf4dad3fb51b2ce64728c61e8f"
-  integrity sha512-k6cKusj9Dkh/uJ0Za6HiqPKTtgr2J6Q5vDSD+FwqvkiVnye9q7EBku+ZUv69KV+bAQLL72YgxwrEyQS4HHrV5g==
+"@nuxt/typescript-build@0.3.10":
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/@nuxt/typescript-build/-/typescript-build-0.3.10.tgz#01b2fee9191542fe05d5ec8ed7ec3742e5435201"
+  integrity sha512-5A5NrkNu4yB1JZuqVDEkW9gq4KyvgVEtbzPhB2dxlPKTp/tirB9FE5mFhczkEJCULTEiuQLiSvnb9nenHiashw==
   dependencies:
-    "@nuxt/types" "0.5.2"
+    "@nuxt/types" "0.5.3"
     consola "^2.11.0"
     fork-ts-checker-webpack-plugin "^3.1.1"
     ts-loader "^6.2.1"
