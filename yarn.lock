@@ -1080,16 +1080,40 @@
     "@types/webpack-dev-middleware" "^2.0.3"
     "@types/webpack-hot-middleware" "^2.16.5"
 
-"@nuxt/typescript-build@0.3.10":
-  version "0.3.10"
-  resolved "https://registry.yarnpkg.com/@nuxt/typescript-build/-/typescript-build-0.3.10.tgz#01b2fee9191542fe05d5ec8ed7ec3742e5435201"
-  integrity sha512-5A5NrkNu4yB1JZuqVDEkW9gq4KyvgVEtbzPhB2dxlPKTp/tirB9FE5mFhczkEJCULTEiuQLiSvnb9nenHiashw==
+"@nuxt/types@0.5.4":
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/types/-/types-0.5.4.tgz#759526e55c3f7d4fe9eaa51fc1c80dba92c46294"
+  integrity sha512-Ofuw2YowLrha1lyo1eKQaJJVQ3FkVVlwu1R1iGERGS24ZSGg6e99jgfMLUVynRPN9GclBJsHYPiPFAmTUWQQ3w==
   dependencies:
-    "@nuxt/types" "0.5.3"
+    "@types/autoprefixer" "^9.6.1"
+    "@types/babel__core" "^7.1.3"
+    "@types/compression" "^1.0.1"
+    "@types/connect" "^3.4.32"
+    "@types/etag" "^1.8.0"
+    "@types/file-loader" "^4.2.0"
+    "@types/html-minifier" "^3.5.3"
+    "@types/less" "^3.0.1"
+    "@types/node" "^12.12.14"
+    "@types/node-sass" "^4.11.0"
+    "@types/optimize-css-assets-webpack-plugin" "^5.0.1"
+    "@types/pug" "^2.0.4"
+    "@types/serve-static" "^1.13.3"
+    "@types/terser-webpack-plugin" "^2.2.0"
+    "@types/webpack" "^4.41.0"
+    "@types/webpack-bundle-analyzer" "^2.13.3"
+    "@types/webpack-dev-middleware" "^2.0.3"
+    "@types/webpack-hot-middleware" "^2.16.5"
+
+"@nuxt/typescript-build@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@nuxt/typescript-build/-/typescript-build-0.4.0.tgz#2e533b1dee24f43a48b0a76166648f2408ff8f87"
+  integrity sha512-JaKVGPoi+IpYz1CSOQDzBpjQvF/HicVMoUcmZVKlg9J5h2trLe/qhxrV4uJijhusbQrg986aEfIaF4GiBlhcyQ==
+  dependencies:
+    "@nuxt/types" "0.5.4"
     consola "^2.11.0"
     fork-ts-checker-webpack-plugin "^3.1.1"
     ts-loader "^6.2.1"
-    typescript "~3.6"
+    typescript "~3.7"
 
 "@nuxt/typescript-runtime@0.2.10":
   version "0.2.10"
@@ -9423,6 +9447,11 @@ typescript@~3.6:
   version "3.6.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.3.tgz#fea942fabb20f7e1ca7164ff626f1a9f3f70b4da"
   integrity sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
+
+typescript@~3.7:
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.3.tgz#b36840668a16458a7025b9eabfad11b66ab85c69"
+  integrity sha512-Mcr/Qk7hXqFBXMN7p7Lusj1ktCBydylfQM/FZCk5glCNQJrCUKPkMHdo9R0MTFWsC/4kPFvDS0fDPvukfCkFsw==
 
 ua-parser-js@^0.7.20:
   version "0.7.20"
