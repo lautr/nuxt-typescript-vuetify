@@ -9641,10 +9641,10 @@ vuetify-loader@1.4.3:
   dependencies:
     loader-utils "^1.2.0"
 
-vuetify@2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-2.2.1.tgz#ff09812ec3c439e379c8a717385a92678ce590ca"
-  integrity sha512-S6MkPNb9tnRtCZ3snCxWk9oYhcoDcmYKjhESpDIm0D8rhqUbif7r14BRq5UXy7007DFkNbPx/PFoygl2D4L0AQ==
+vuetify@2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-2.2.2.tgz#d9e7a974c528d8dfd5873542d4e11cea5732a547"
+  integrity sha512-n+tRDLqbIdYXWsX3p3PHVvs2sGxW9iKq4Lx7eXwUzfGKReITng/TsOOJkpekPczg8JJGDKx6wJyOKS2fVPI/Rw==
 
 vuex-class@0.3.2:
   version "0.3.2"
