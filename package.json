@@ -13,7 +13,7 @@
     "now-build": "nuxt-ts build --spa"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "0.3.8",
+    "@nuxt/typescript-runtime": "0.4.10",
     "deepmerge": "4.2.2",
     "fibers": "4.0.2",
     "material-design-icons-iconfont": "5.0.1",
