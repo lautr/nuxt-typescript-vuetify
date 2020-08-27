@@ -23,7 +23,7 @@
     "ts-node": "8.6.2",
     "vue-property-decorator": "8.4.0",
     "vuetify": "2.2.11",
-    "vuetify-loader": "1.4.3",
+    "vuetify-loader": "1.6.0",
     "vuex-class": "0.3.2",
     "vuex-module-decorators": "0.16.1"
   },
